@@ -1,0 +1,128 @@
+body{
+    background-color: #0E5135;
+    margin: 0;
+}
+
+header{
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    background-image: linear-gradient( #0E5135, #4aba91);
+    border: 0px;
+    margin: 0%;
+}
+
+header > img{
+    height: 100px;
+}
+
+header > .login-button{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    flex-direction: row;
+
+}
+
+header > .login-button > img , header > .login-button > p{
+    display: inline-flex;
+    font-size: large;
+    color:#494b4b;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.discription{
+    font-family: vivaldi;
+    font-size: xx-large;
+    color: azure;
+    
+}
+
+.discription > p{
+    padding: 10px;
+    margin: 0px;
+}
+
+.row{
+    width: 100%;
+    white-space: nowrap;
+}
+
+.col{
+    white-space: normal;
+    vertical-align: top;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.col > img , .col>p{
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+    opacity: 1;
+    padding: 10px;
+}
+
+.cols3{
+    width: 25%;
+}
+
+.cols4{
+    position: relative;
+    width: 33%;
+}
+
+.cols6{
+    width:50%;
+}
+
+.cols8{
+    width: 66%;
+}
+
+.cols9{
+    width: 75%;
+}
+
+.right{
+    position: absolute;
+    right: 15px;
+}
+
+.button-sq{
+    background-color: #0d9263;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    vertical-align: top;
+    text-align: center;
+    border-width: 13px;
+    border-style: solid;
+    border-color: #4aba91;
+    padding: 0px;
+    transition: border-color 1s ease;
+}
+
+.button-sq:hover{
+    background-image: radial-gradient(#67ffc7,#255d49);
+    border-color: azure;
+    transition: border-color 1s ease;
+    font-style: oblique;
+    cursor: pointer;
+}
+
+.link > p:hover{
+    color: azure;
+    cursor: pointer;
+}
+
+.button-sq > span {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@font-face{
+    font-family: vivaldi;
+    src: url(assets/fonts/VIVALDII.TTF);
+}
