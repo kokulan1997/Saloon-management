@@ -102,16 +102,26 @@ header > .login-button > img , header > .login-button > p{
     right: 15px;
 }
 
+.button-sq-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
 .button-sq{
+    min-width: 150px;
+    font-weight: bold;
     background-color: #0d9263;
-    height: 125px;
-    width: 125px;
+    height: 150px;
+    width: 150px;
     border-radius: 20px;
+    margin: 10px;
     vertical-align: top;
     text-align: center;
-    border-width: 13px;
+    border-width: 15px;
     border-style: solid;
-    border-color: #4aba91;
+    border-color: #5cdaab;
     padding: 0px;
     transition: border-color 1s ease;
 }
