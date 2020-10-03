@@ -1,9 +1,9 @@
-body{
+body {
     background-color: #0E5135;
     margin: 0;
 }
 
-header{
+header {
     position: relative;
     height: 100px;
     overflow: hidden;
@@ -12,52 +12,53 @@ header{
     margin: 0%;
 }
 
-header > img{
+header>img {
     height: 100px;
 }
 
-header > .login-button{
+header>.login-button {
     position: absolute;
     right: 10px;
     bottom: 10px;
-    flex-direction: row;
-
 }
 
-header > .login-button > img , header > .login-button > p{
+header>.login-button>img, header>.login-button>p {
     display: inline-flex;
     font-size: large;
-    color:#494b4b;
+    color: #494b4b;
     margin: 0px;
     vertical-align: middle;
 }
 
-.discription{
+.topic-main {
+    margin-left: 10px;
+}
+
+.discription {
     font-family: vivaldi;
     font-size: xx-large;
     color: azure;
-    
 }
 
-.discription > p{
+.discription>p {
     padding: 10px;
     margin: 0px;
 }
 
-.row{
+.row {
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.col{
+.col {
     white-space: normal;
     vertical-align: top;
     display: inline-flex;
     overflow: hidden;
 }
 
-.col > img , .col>p{
+.col>img, .col>p {
     display: inline-flex;
     width: 100%;
     position: relative;
@@ -65,51 +66,50 @@ header > .login-button > img , header > .login-button > p{
     padding: 10px;
 }
 
-.cols3{
+.cols3 {
     width: 25%;
 }
 
-.cols4{
+.cols4 {
     position: relative;
     width: 33%;
 }
 
-.cols6{
-    width:50%;
-
+.cols6 {
+    width: 50%;
 }
 
-.cols8{
+.cols8 {
     width: 66%;
 }
 
-.cols9{
+.cols9 {
     width: 75%;
 }
 
-.center{
+.center {
     margin-right: auto;
     margin-left: auto;
 }
 
-.vcenter{
+.vcenter {
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.right{
+.right {
     position: absolute;
     right: 15px;
 }
 
-.button-sq-container{
+.button-sq-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
 }
 
-.button-sq{
+.button-sq {
     min-width: 150px;
     font-weight: bold;
     background-color: #0d9263;
@@ -126,42 +126,113 @@ header > .login-button > img , header > .login-button > p{
     transition: border-color 1s ease;
 }
 
-.button-sq:hover{
-    background-image: radial-gradient(#67ffc7,#255d49);
+.button-sq:hover , .card-appointment:hover{
+    background-image: radial-gradient(#67ffc7, #255d49);
     border-color: azure;
     transition: border-color 1s ease;
-    font-style: oblique;
     cursor: pointer;
 }
 
-.link > p:hover{
+.link>p:hover {
     color: azure;
     cursor: pointer;
 }
 
-.button-sq > span {
+.button-sq>span {
     margin-top: auto;
     margin-bottom: auto;
 }
+
+.container-appointment {
+    margin-left: 10%;
+    color: #4aba91;
+}
+
+.container-appointment > h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-appointment {
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: #4aba91;
+    background-image: linear-gradient(#0E5135, #4aba91);
+    width: 70%;
+    margin-bottom: 20px;
+    transition: border-color 1s ease;
+}
+
+.content-appointment {
+    margin-bottom: 10px;
+}
+
+.content-appointment>div>p {
+    margin: 2px;
+    color: azure;
+}
+
+.content-appointment>div>.key{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: #5cdaab;
+}
+
+.content-appointment>div>.value {
+    font-family: vivaldi;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.topic {
+    position: relative;
+    color: azure;
+}
+
+.topic>.service {
+    font-family: vivaldi;
+    font-weight: 700;
+    font-size: x-large;
+    margin-left: 15px;
+}
+
+.topic>h2 {
+    margin: 5px;
+}
+
+.topic>.time {
+    position: absolute;
+    right: 0%;
+}
+
+.ml10 {
+    margin-left: 10%;
+}
+
+/* flexbox  */
+
+.flex {
+    display: flex;
+}
+
 /* malshi */
 
-.form_container{
+.form_container {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-
 }
 
-form{
-    display:flex;
+form {
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.input_field{
+.input_field {
     max-width: 380px;
     width: 100%;
     height: 45px;
@@ -173,13 +244,13 @@ form{
     padding: o.4rem;
 }
 
-.input_field i{
+.input_field i {
     text-align: center;
     line-height: 55px;
     color: brown;
 }
 
-.input_field input{
+.input_field input {
     background: none;
     outline: none;
     border: none;
@@ -188,12 +259,12 @@ form{
     color: black;
 }
 
-.input_field input::placeholder{
+.input_field input::placeholder {
     color: #aaa;
     font-weight: 500;
 }
 
-.btn{
+.btn {
     width: 380px;
     height: 45px;
     background-color: #26c054;
@@ -202,15 +273,17 @@ form{
     display: grid;
 }
 
-.btn:hover{
-    background-image: radial-gradient(#67ffc7,#255d49);
+.btn:hover {
+    background-image: radial-gradient(#67ffc7, #255d49);
     border-color: azure;
     transition: border-color 1s ease;
     font-style: oblique;
     cursor: pointer;
 }
+
 /* malshi */
-@font-face{
+
+@font-face {
     font-family: vivaldi;
     src: url(assets/fonts/VIVALDII.TTF);
 }
