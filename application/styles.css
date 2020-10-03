@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     position: relative;
     height: 100px;
@@ -126,7 +130,7 @@ header>.login-button>img, header>.login-button>p {
     transition: border-color 1s ease;
 }
 
-.button-sq:hover , .card-appointment:hover{
+.button-sq:hover, .card-appointment:hover , .button-pill:hover{
     background-image: radial-gradient(#67ffc7, #255d49);
     border-color: azure;
     transition: border-color 1s ease;
@@ -148,7 +152,7 @@ header>.login-button>img, header>.login-button>p {
     color: #4aba91;
 }
 
-.container-appointment > h2{
+.container-appointment>h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -172,7 +176,7 @@ header>.login-button>img, header>.login-button>p {
     color: azure;
 }
 
-.content-appointment>div>.key{
+.content-appointment>div>.key {
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
     color: #5cdaab;
@@ -215,7 +219,80 @@ header>.login-button>img, header>.login-button>p {
     display: flex;
 }
 
-/* malshi */
+.container-appointment-new {
+    flex-direction: column;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pill {
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 50%;
+    align-content: center;
+}
+
+.pill>p {
+    color: azure;
+    font-weight: 500;
+}
+
+.pill>.input-pill {
+    
+    align-self: center;
+    justify-self: end;
+    width: 70%;
+    position: absolute;
+    right: 0%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #0d9263;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #0d9263;
+    transition: border-color 1s ease;
+}
+
+/* correction to the select tag  */
+.pill>select{
+    padding: 2px;
+    padding-left: 10px;
+    width: 7%;
+}
+
+.pill>.input-pill>option{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align-last: center;
+    color: #0d9263;
+}
+
+.pill>.input-pill:hover{
+    border-color: azure;
+    transition: border-color 1s ease;
+}
+
+.button-pill {
+    align-self: center;
+    justify-self: end;
+    width: 100%;
+    position: absolute;
+    right: 0%;
+    border-radius: 15px;
+    margin-top: 50px;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border-style: solid;
+    border-color: #0d9263;
+    background-image: radial-gradient(#0E5135, #4aba91);
+    transition: border-color 1s ease;
+}
+
+/* malshi *
 
 .form_container {
     position: absolute;
