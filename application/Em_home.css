@@ -1,0 +1,200 @@
+body {
+    background-color: #0E5135;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    background-image: linear-gradient( #0E5135, #4aba91);
+    border: 0px;
+    margin: 0%;
+}
+
+header>img {
+    height: 100px;
+}
+
+header>.login-button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+header>.login-button>img, header>.login-button>p {
+    display: inline-flex;
+    font-size: large;
+    color: #494b4b;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.topic-main {
+    margin-left: 10px;
+}
+
+.discription {
+    font-family: vivaldi;
+    font-size: xx-large;
+    color: azure;
+}
+
+.discription>p {
+    padding: 10px;
+    margin: 0px;
+}
+
+
+.card-appointment:hover {
+    background-image: radial-gradient(#67ffc7, #255d49);
+    border-color: azure;
+    transition: border-color 1s ease;
+    cursor: pointer;
+}
+
+.col {
+    float: left;
+    padding: 5px;
+}
+
+.roww {
+    display: flex;
+}
+.left{
+    width: 75%;
+}
+
+.right{
+    width: 25%;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.button-sq-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.button-sq {
+    min-width: 150px;
+    font-weight: bold;
+    background-color: #0d9263;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    margin: 10px;
+    vertical-align: top;
+    text-align: center;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #5cdaab;
+    padding: 0px;
+    transition: border-color 1s ease;
+}
+
+.button-sq:hover{
+    background-image: radial-gradient(#67ffc7, #255d49);
+    border-color: azure;
+    transition: border-color 1s ease;
+    cursor: pointer;
+}
+
+.link>p:hover {
+    color: azure;
+    cursor: pointer;
+}
+
+.container-appointment {
+    margin-left: 10%;
+    color: #4aba91;
+}
+
+.container-appointment>h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-appointment {
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: #4aba91;
+    background-image: linear-gradient(#0E5135, #4aba91);
+    width: 100%;
+    margin-bottom: 20px;
+    transition: border-color 1s ease;
+}
+
+.content-appointment {
+    margin-bottom: 10px;
+}
+
+.content-appointment>div>p {
+    margin: 2px;
+    color: azure;
+}
+
+.content-appointment>div>.key {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: #5cdaab;
+}
+
+.content-appointment>div>.value {
+    font-family: vivaldi;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.topic {
+    position: relative;
+    color: azure;
+}
+
+.topic>.service {
+    font-family: vivaldi;
+    font-weight: 700;
+    font-size: x-large;
+    margin-left: 15px;
+}
+
+.topic>h2 {
+    margin: 5px;
+}
+
+.topic>.time {
+    position: absolute;
+    right: 0%;
+}
+
+.ml10 {
+    margin-left: 10%;
+}
+
+.flex {
+    display: flex;
+}
+
+.container-appointment-new {
+    flex-direction: column;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+@font-face {
+    font-family: vivaldi;
+    src: url(assets/fonts/VIVALDII.TTF);
+}
