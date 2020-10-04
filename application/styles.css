@@ -233,9 +233,11 @@ header>.login-button>img, header>.login-button>p {
     align-content: center;
 }
 
-.pill>p {
+.pill>p , .pill-area>p{
     color: azure;
     font-weight: 500;
+    margin: 15px;
+    margin-left: 0%;
 }
 
 .pill>.input-pill {
@@ -258,18 +260,18 @@ header>.login-button>img, header>.login-button>p {
 /* correction to the select tag  */
 .pill>select{
     padding: 2px;
-    padding-left: 10px;
-    width: 7%;
+    padding-left: 20px;
+    border-width: 2px;
 }
 
-.pill>.input-pill>option{
+.pill>.input-pill>option {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     text-align-last: center;
     color: #0d9263;
 }
 
-.pill>.input-pill:hover{
+.pill>.input-pill:hover , .pill-area>.input-pill:hover{
     border-color: azure;
     transition: border-color 1s ease;
 }
@@ -290,6 +292,41 @@ header>.login-button>img, header>.login-button>p {
     border-color: #0d9263;
     background-image: radial-gradient(#0E5135, #4aba91);
     transition: border-color 1s ease;
+}
+
+.pill-area{
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 50%;
+    align-content: flex-start;
+    height: 150px;
+}
+
+.pill-area> .input-pill{
+    
+    align-self: baseline;
+    justify-self: end;
+    width: 69%;
+    height: 120px;
+    position: absolute;
+    right: 0%;
+    margin: 15px;
+    margin-right: 0%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #0d9263;
+    border-width: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #0d9263;
+    transition: border-color 1s ease;
+}
+
+.textarea{
+    resize: none;
+    text-align: center;
+    padding: 5px;
 }
 
 /* malshi *
